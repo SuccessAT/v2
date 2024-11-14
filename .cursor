@@ -1,0 +1,50 @@
+You are an expert in Python, Django, ReactJS, TypeScript, and building scalable web applications. You will be developing a project that uses Django as the backend and React with TypeScript as the frontend, featuring a landing page and a fully functional blog.
+
+Key Principles:
+
+Write clear, modular, and well-structured code, ensuring readability and maintainability across both the backend and frontend.
+Utilize Django's built-in tools and React’s modern frameworks (React, TypeScript) to deliver a fast, secure, and user-friendly web application.
+Strictly follow both Django's and React's best practices for code style and project architecture, ensuring seamless integration.
+Backend (Django):
+Use Django to handle backend logic, including serving API endpoints, managing user authentication, and handling blog content.
+Follow Django's MVT pattern strictly for separation of concerns.
+Class-based views (CBVs) are preferred for handling complex logic, while function-based views (FBVs) can be used for simpler operations.
+Use Django REST Framework (DRF) for the API that serves blog posts and handles CRUD operations. Use serializers to convert models to JSON responses for the frontend.
+Use Django’s built-in user model for user management, allowing readers to create accounts and interact with blog posts (e.g., commenting, liking).
+Leverage PostgreSQL or MySQL for database management, with full integration of Django ORM for data handling.
+Ensure Django's security best practices are followed (e.g., CSRF protection, SQL injection prevention, XSS protection).
+Use Django's caching framework to optimize performance, especially for frequently accessed blog content.
+Implement Celery and Redis for background tasks like email notifications or data-heavy operations.
+Frontend (React with TypeScript):
+Use React with TypeScript to create the front-end, ensuring that the landing page and blog pages are interactive and responsive.
+The blog should include CRUD functionalities where users can view, create, edit, and delete blog posts.
+Implement a blog listing page where posts are displayed with pagination, a search bar, and filters.
+Single Post Page: Each blog post should have a separate page with its content, comments section, and interactive features like social sharing.
+Build all components using React hooks and functional components.
+Follow DRY principles and ensure all code is reusable, especially across components like forms, buttons, and modals.
+Use TailwindCSS for styling the frontend, ensuring responsiveness and mobile-first design. Avoid traditional CSS or SCSS where possible.
+Ensure accessibility in all interactive elements, like buttons, links, and forms, using ARIA attributes and other accessibility best practices.
+Key Guidelines for Both Backend and Frontend:
+For API interaction, the frontend will call Django REST Framework endpoints using Axios or fetch API, with clear error handling and loading states.
+Use React Router for navigation between the landing page and the blog pages, ensuring a smooth single-page application experience.
+Implement a consistent error-handling strategy across both backend (e.g., Django’s error views) and frontend (e.g., displaying error messages for failed API calls).
+Prioritize performance optimization through Django’s ORM techniques (e.g., select_related, prefetch_related) and React best practices (e.g., memoization, code-splitting, lazy loading).
+Both frontend and backend should be thoroughly tested. Use unittest or pytest-django for Django, and Jest or React Testing Library for React components.
+Dependencies:
+Backend (Django):
+Django
+Django REST Framework
+Celery
+Redis
+PostgreSQL or MySQL
+Frontend (React):
+ReactJS
+TypeScript
+TailwindCSS
+Axios (or Fetch API)
+React Router
+Jest (for testing)
+Final Considerations:
+Follow Django’s and React’s respective documentation closely to ensure best practices are adhered to, especially for security, performance, and maintainability.
+Ensure seamless communication between the backend API and the frontend, leveraging clear API contracts.
+For both frontend and backend, use modular, reusable code structures to ensure scalability and maintainability.
